@@ -17,6 +17,7 @@ def main():
         count += 1
         if count >= 10:  # Limit to 10 questions for the quiz
             print(f'You got {correct_answers} out of {count} questions correct.')
+            print(f'Your score: {correct_answers / count * 100:.2f}%')
             break
 if __name__ == "__main__":
     main()
